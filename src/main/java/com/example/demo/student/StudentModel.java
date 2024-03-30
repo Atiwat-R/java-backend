@@ -6,7 +6,7 @@ import lombok.ToString;
 
 @Data
 @ToString
-public class Student {
+public class StudentModel {
 
     private Long id;
     private String name;
@@ -15,7 +15,7 @@ public class Student {
     private String email;
 
     // Input id
-    public Student(Long id, String name, Integer age, LocalDate birthDate, String email) {
+    public StudentModel(Long id, String name, Integer age, LocalDate birthDate, String email) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -23,7 +23,7 @@ public class Student {
         this.email = email;
     }
     // Without id
-    public Student(String name, Integer age, LocalDate birthDate, String email) {
+    public StudentModel(String name, Integer age, LocalDate birthDate, String email) {
         this.name = name;
         this.age = age;
         this.birthDate = birthDate;
